@@ -18,3 +18,44 @@
 .list {
   color: palevioletred;
 }
+
+.show {
+  /* opacity: 1;
+  transition: all 1.5s ease-in; */
+  animation: show-item 1.5s ease-in forwards;
+}
+.hide {
+  /* opacity: 0;
+  transition: all 1.5s ease-in; */
+  animation: hide-item 1.5s ease-in forwards;
+}
+
+/* 关键帧动画 */
+@keyframes hide-item {
+  0% {
+    opacity: 1;
+    color: palevioletred;
+  }
+  50% {
+    opacity: 0.5;
+    color: plum;
+  }
+  100% {
+    opacity: 0;
+    color: pink;
+  }
+}
+@keyframes show-item {
+  0% {
+    opacity: 0;
+    color: pink;
+  }
+  50% {
+    opacity: 0.5;
+    color: plum;
+  }
+  100% {
+    opacity: 1;
+    color: palevioletred;
+  }
+}
